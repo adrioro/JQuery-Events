@@ -13,5 +13,5 @@ $("#focusHere").click(function () {
 //To blur is to unfocus. It is also used on elements that can be activated (or selected.)
 
 $("#inputThenBlur").focus(function () {
-    $(this).blur();
+    $(this).blur(); //No matter how many times I click, it does not select the text area.
 });
