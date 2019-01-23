@@ -15,3 +15,15 @@ $("#focusHere").click(function () {
 $("#inputThenBlur").focus(function () {
     $(this).blur(); //No matter how many times I click, it does not select the text area.
 });
+
+//Hover
+
+//$("selector").hover(function() {}, function() {});
+
+$("#myButton").hover(
+    function () {
+        $(this).css("border", "1px solid red");
+    },
+    function () {
+        $(this).css("border", 0);
+    });
