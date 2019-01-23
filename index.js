@@ -27,3 +27,31 @@ $("#myButton").hover(
     function () {
         $(this).css("border", 0);
     });
+
+//Keys
+
+// .keydown() .keypress() .Keyup()
+
+$("#keyTextArea").keypress(function () {
+    alert("Key was pressed");
+});
+
+//Mouse
+
+/*
+.mousedown() HTML Attribute: OnMouseDown=""
+.mouseup() HTML Attribute: onMouseUp=""
+.mouseover() HTML Attribute: onMouseOver=""
+.mouseenter() No HTML Attribute
+.mouseleave()
+.mousemove() HTML Attribute: onMouseMove=""
+*/
+$("#mouseEvent").mousedown(function () {
+    alert("Handler for .mousedown() called.");
+});
+//$("#mouseEvent").mousedown(function () {
+//$(this).append("Mouse Down.");
+//});
+$("#mouseEventTextArea").mouseup(function () {
+    $(this).append("Mouse Up.");
+});
