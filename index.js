@@ -55,3 +55,8 @@ $("#mouseEvent").mousedown(function () {
 $("#mouseEventTextArea").mouseup(function () {
     $(this).append("Mouse Up.");
 });
+
+//Toggle
+$("#buttonToggle").click(function () {
+    $(this).next().toggle();
+});
